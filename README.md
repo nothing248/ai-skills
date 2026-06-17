@@ -72,7 +72,8 @@ notes-structure-skill/
 ├── .gitignore
 ├── LICENSE
 ├── README.md                                     # 本项目主文档
-├── SKILL.md                                      # 核心 AI 技能行为规范文件 (平铺于根目录，支持 gh skill 一键安装)
+├── agency-learning-notebook-architect/           # 技能命名目录 (满足 gh skill 的 */SKILL.md 匹配规范)
+│   └── SKILL.md                                  # 核心 AI 技能行为规范文件
 └── examples/
     └── docker_nodejs_example.md                  # 场景定制化生成的空白笔记大纲范例
 ```
@@ -89,7 +90,7 @@ gh skill install nickyang/notes-structure-skill
 ```
 
 ### 2. 手动克隆集成
-您可以直接克隆本项目，并将项目根目录下的 `SKILL.md` 拷贝到您自己项目的 `.agents/skills/agency-learning-notebook-architect/` 目录中即可激活：
+您可以直接克隆本项目，并将项目子目录下的 `SKILL.md` 拷贝到您自己项目的 `.agents/skills/agency-learning-notebook-architect/` 目录中即可激活：
 
 ```bash
 # 克隆项目
@@ -97,7 +98,7 @@ git clone https://github.com/nickyang/notes-structure-skill.git
 
 # 创建宿主项目中的技能目录，并将 SKILL.md 写入其中
 mkdir -p /path/to/your-project/.agents/skills/agency-learning-notebook-architect
-cp notes-structure-skill/SKILL.md /path/to/your-project/.agents/skills/agency-learning-notebook-architect/
+cp notes-structure-skill/agency-learning-notebook-architect/SKILL.md /path/to/your-project/.agents/skills/agency-learning-notebook-architect/
 ```
 
 ---
