@@ -3,7 +3,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
   <img src="https://img.shields.io/badge/LLM--Ready-Yes-blueviolt.svg" alt="LLM Ready">
-  <img src="https://img.shields.io/badge/Antigravity--Skill-v1.0-orange.svg" alt="Antigravity Skill">
   <img src="https://img.shields.io/badge/PKM--Framework-Obsidian%20%7C%20Notion-blue.svg" alt="PKM Framework">
 </p>
 
@@ -105,7 +104,7 @@ cp notes-structure-skill/agency-learning-notebook-architect/SKILL.md /path/to/yo
 
 ## 💻 运行与唤醒示例
 
-启动您的 AI 代理（支持 Skills Router 的 Agent ），向其发送具体的目标描述指令，例如：
+启动您的 AI 代理，向其发送具体的目标描述指令，例如：
 
 > **我输入**：
 > 我想学习 `Docker`，我的具体学习目标是 `在生产环境中打包并安全部署一个 Node.js (Express) Web 应用，要求尽可能压缩镜像体积，并解决容器内应用崩溃无法自动重启的问题。`
