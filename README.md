@@ -31,10 +31,7 @@ notes-structure-skill/
 ├── .gitignore
 ├── LICENSE
 ├── README.md
-├── .agents/
-│   └── skills/
-│       └── agency-learning-notebook-architect/
-│           └── SKILL.md                          # 核心 AI 技能行为规范文件
+├── SKILL.md                                      # 核心 AI 技能行为规范文件 (平铺于根目录，支持 gh skill)
 └── examples/
     └── docker_nodejs_example.md                  # 模拟生成的空白大纲示例文件
 ```
@@ -43,15 +40,26 @@ notes-structure-skill/
 
 ## 🚀 安装与使用
 
-### 1. 手动集成到您的 Agent 项目中
-直接将本项目下的 `.agents/skills/agency-learning-notebook-architect` 文件夹拷贝到您自己的项目的 `.agents/skills/` 目录下即可激活：
+### 1. 使用 `gh skill` 一键安装（推荐）
+如果您已经配置了 `gh skill` 扩展，可以直接在您的终端运行以下命令进行快速安装：
 
 ```bash
-# 假设您的项目根目录为 your-agent-project
-cp -r .agents/skills/agency-learning-notebook-architect /path/to/your-agent-project/.agents/skills/
+gh skill install nickyang/notes-structure-skill
 ```
 
-### 2. 运行与唤醒
+### 2. 手动拷贝集成
+您也可以直接 clone 本项目，并将项目根目录下的 `SKILL.md` 拷贝到您自己项目的 `.agents/skills/agency-learning-notebook-architect/` 目录中激活：
+
+```bash
+# 克隆项目
+git clone https://github.com/nickyang/notes-structure-skill.git
+
+# 复制技能核心规范到宿主项目
+mkdir -p /path/to/your-project/.agents/skills/agency-learning-notebook-architect
+cp notes-structure-skill/SKILL.md /path/to/your-project/.agents/skills/agency-learning-notebook-architect/
+```
+
+### 3. 运行与唤醒
 启动您的 AI 代理对话，向支持 Skills Router 的 Agent 发送类似以下指令：
 
 ```text
