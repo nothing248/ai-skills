@@ -17,28 +17,29 @@
 ```text
 ai-skills/
 ├── README.md                                     # 仓库主文档（本文件）
-├── notes-create-template/                        # 技能 1: 笔记大纲生成器
-│   ├── README.md                                 # 技能说明文档
-│   ├── SKILL.md                                  # 技能行为规范文件
-│   └── resources/                                # 具体的笔记大纲模板
-│       ├── theory-template.md                    # 理论概念大纲模板
-│       ├── tool-template.md                      # 工具框架大纲模板
-│       └── project-template.md                   # 实战项目大纲模板
-└── notes-optimize/                               # 技能 2: 笔记优化与脱敏工具
-    ├── README.md                                 # 技能说明文档
-    └── SKILL.md                                  # 技能行为规范文件
+└── skills/                                       # 技能存放目录
+    ├── notes-create-template/                    # 技能 1: 笔记大纲生成器
+    │   ├── README.md                             # 技能说明文档
+    │   ├── SKILL.md                              # 技能行为规范文件
+    │   └── resources/                            # 具体的笔记大纲模板
+    │       ├── theory-template.md                # 理论概念大纲模板
+    │       ├── tool-template.md                  # 工具框架大纲模板
+    │       └── project-template.md               # 实战项目大纲模板
+    └── notes-optimize/                           # 技能 2: 笔记优化与脱敏工具
+        ├── README.md                             # 技能说明文档
+        └── SKILL.md                              # 技能行为规范文件
 ```
 
 ---
 
 ## 🛠️ 技能介绍
 
-### 1. [notes-create-template](notes-create-template/README.md) (学习笔记与大纲架构师)
+### 1. [notes-create-template](skills/notes-create-template/README.md) (学习笔记与大纲架构师)
 *   **核心功能**：根据具体的**学习事物**及**应用目标**，为用户量身定制纯净空白、高启发性的 Markdown 笔记大纲模板。
 *   **内置方法**：深度融入了 SQ3R 提问法、康奈尔双栏笔记法、费曼测试以及蔡格尼克悬案箱，促进用户深度加工与主动学习，同时设计了双向代码路由以便后期维护。
 *   **适用场景**：想要系统化学习某个新协议、新工具或手写核心项目时。
 
-### 2. [notes-optimize](notes-optimize/README.md) (Obsidian & RAG 笔记优化专家)
+### 2. [notes-optimize](skills/notes-optimize/README.md) (Obsidian & RAG 笔记优化专家)
 *   **核心功能**：将凌乱的技术草稿、日常随手记，一键转化为对大模型 RAG（检索增强生成）友好且安全脱敏的 Obsidian 笔记。
 *   **内置方法**：自动识别并过滤隐私信息（IP地址、私钥、公司名、真实姓名等）为占位符；提取高信息密度的笔记摘要（summary）放入 YAML 中以提升向量数据库的检索召回精度。
 *   **适用场景**：发布笔记前需要安全脱敏，或者想将笔记存入 Obsidian 并实现向量检索时。
