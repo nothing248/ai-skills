@@ -40,7 +40,7 @@ description: Expertise in transforming raw drafts, chaotic technical records, an
 - 如果是技术笔记，确保术语准确、代码块格式正确且包含语言标识符。
 
 ### 5. Obsidian 格式规范
-- **YAML Front Matter**：必须生成并填充以下字段：`title`、`filename`、`date created`、`date modified`、`aliases`、`tags`、`description`、`status`。
+- **YAML Front Matter**：必须生成并填充以下字段：`title`、`filename`、`date created`、`date modified`、`aliases`、`tags`、`description`、`status`。 其中：`title`、`description` 需要为中文
 - **标签与别名**：分别提取 3-5 个核心关键词，以数组形式作为 `tags` 与 `aliases` 放入元数据中。
 - **排版增强**：熟悉并善于使用 **粗体**、`行内代码`、`> 引用块`、`分页符` 以及 Callouts 样式（例如 `> [!note]`, `> [!info]`, `> [!warning]`）等语法来增强排版的可读性。
 
