@@ -1,0 +1,51 @@
+{
+  "expectations": [
+    {
+      "text": "The output includes a section for Business Logic & Constraints",
+      "passed": true,
+      "evidence": "Found sections related to Business Logic or Constraints"
+    },
+    {
+      "text": "The output includes the business constraint: single file size <= 50MB",
+      "passed": true,
+      "evidence": "Found '50MB' file size restriction"
+    },
+    {
+      "text": "The output includes the business constraint: sharing link <= 7 days",
+      "passed": true,
+      "evidence": "Found '7' days sharing link limit"
+    },
+    {
+      "text": "The output includes the tech stack rule: Next.js 14 and Supabase",
+      "passed": true,
+      "evidence": "Found Next.js and Supabase in tech stack rules"
+    },
+    {
+      "text": "The output includes code conventions: Prisma ORM and forbidding console.log",
+      "passed": true,
+      "evidence": "Found Prisma ORM use and console.log restriction"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": {
+      "Read": 2,
+      "Write": 1
+    },
+    "total_tool_calls": 3,
+    "total_steps": 3,
+    "errors_encountered": 0,
+    "output_chars": 1118,
+    "transcript_chars": 2000
+  },
+  "timing": {
+    "executor_duration_seconds": 31.2,
+    "grader_duration_seconds": 2.0,
+    "total_duration_seconds": 33.2
+  }
+}

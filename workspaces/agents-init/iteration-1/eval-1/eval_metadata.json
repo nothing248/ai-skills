@@ -1,0 +1,9 @@
+{
+  "eval_id": 1,
+  "eval_name": "fallback-readme",
+  "prompt": "我想初始化项目规则，请根据项目中的文档自动生成 AGENTS.md。",
+  "assertions": [
+    "The output includes standard memo rules like Vite and Raw CSS",
+    "The agent outputs a hint or message indicating that prd.md and tech-stack.md were missing"
+  ]
+}

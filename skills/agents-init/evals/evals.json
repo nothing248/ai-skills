@@ -1,0 +1,42 @@
+{
+  "skill_name": "agents-init",
+  "evals": [
+    {
+      "id": 0,
+      "eval_name": "standard-init",
+      "prompt": "根据项目里的 md 文档初始化项目规则，帮我生成 AGENTS.md 文件。",
+      "expected_output": "在工作区 .agents/AGENTS.md 中成功生成包含 prd.md 和 tech-stack.md 核心规则的结构化配置",
+      "files": ["prd.md", "tech-stack.md"],
+      "expectations": [
+        "The output includes a section for Business Logic & Constraints",
+        "The output includes the business constraint: single file size <= 50MB",
+        "The output includes the business constraint: sharing link <= 7 days",
+        "The output includes the tech stack rule: Next.js 14 and Supabase",
+        "The output includes code conventions: Prisma ORM and forbidding console.log"
+      ]
+    },
+    {
+      "id": 1,
+      "eval_name": "fallback-readme",
+      "prompt": "我想初始化项目规则，请根据项目中的文档自动生成 AGENTS.md。",
+      "expected_output": "在 tech-stack.md 和 prd.md 缺失时，能够寻找到 README.md 并提取基本规则，同时向用户提示",
+      "files": ["README.md"],
+      "expectations": [
+        "The output includes standard memo rules like Vite and Raw CSS",
+        "The agent outputs a hint or message indicating that prd.md and tech-stack.md were missing"
+      ]
+    },
+    {
+      "id": 2,
+      "eval_name": "update-rules",
+      "prompt": "我们的 PRD 最近进行了修改，请帮我重新生成并更新 .agents/AGENTS.md 文件以同步最新规则。",
+      "expected_output": "读取新的 prd.md 内容，并在现有的 .agents/AGENTS.md 中更新相关部分，同时保留原先技术栈相关的规则",
+      "files": ["prd.md", "tech-stack.md", ".agents/AGENTS.md"],
+      "expectations": [
+        "The output contains the updated login method: WeChat Scan Login",
+        "The output contains WeChat Pay integration rules and webhook signature validation",
+        "The output retains Next.js 14, Supabase, and Prisma ORM rules"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "eval_id": 2,
+  "eval_name": "update-rules",
+  "prompt": "我们的 PRD 最近进行了修改，请帮我重新生成并更新 .agents/AGENTS.md 文件以同步最新规则。",
+  "assertions": [
+    "The output contains the updated login method: WeChat Scan Login",
+    "The output contains WeChat Pay integration rules and webhook signature validation",
+    "The output retains Next.js 14, Supabase, and Prisma ORM rules"
+  ]
+}

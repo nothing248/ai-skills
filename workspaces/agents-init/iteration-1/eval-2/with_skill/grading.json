@@ -1,0 +1,41 @@
+{
+  "expectations": [
+    {
+      "text": "The output contains the updated login method: WeChat Scan Login",
+      "passed": true,
+      "evidence": "Found WeChat scan login rules"
+    },
+    {
+      "text": "The output contains WeChat Pay integration rules and webhook signature validation",
+      "passed": true,
+      "evidence": "Found WeChat pay integration and signature validation rules"
+    },
+    {
+      "text": "The output retains Next.js 14, Supabase, and Prisma ORM rules",
+      "passed": true,
+      "evidence": "Found Next.js, Supabase, and Prisma rules preserved"
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 0,
+    "total": 3,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": {
+      "Read": 2,
+      "Write": 1
+    },
+    "total_tool_calls": 3,
+    "total_steps": 3,
+    "errors_encountered": 0,
+    "output_chars": 1128,
+    "transcript_chars": 2000
+  },
+  "timing": {
+    "executor_duration_seconds": 33.1,
+    "grader_duration_seconds": 2.0,
+    "total_duration_seconds": 35.1
+  }
+}

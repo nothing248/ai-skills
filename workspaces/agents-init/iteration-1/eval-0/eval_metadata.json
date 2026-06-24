@@ -1,0 +1,12 @@
+{
+  "eval_id": 0,
+  "eval_name": "standard-init",
+  "prompt": "根据项目里的 md 文档初始化项目规则，帮我生成 AGENTS.md 文件。",
+  "assertions": [
+    "The output includes a section for Business Logic & Constraints",
+    "The output includes the business constraint: single file size <= 50MB",
+    "The output includes the business constraint: sharing link <= 7 days",
+    "The output includes the tech stack rule: Next.js 14 and Supabase",
+    "The output includes code conventions: Prisma ORM and forbidding console.log"
+  ]
+}

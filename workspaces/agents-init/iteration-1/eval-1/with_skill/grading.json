@@ -1,0 +1,36 @@
+{
+  "expectations": [
+    {
+      "text": "The output includes standard memo rules like Vite and Raw CSS",
+      "passed": true,
+      "evidence": "Found Vite and Raw CSS guidelines in output"
+    },
+    {
+      "text": "The agent outputs a hint or message indicating that prd.md and tech-stack.md were missing",
+      "passed": true,
+      "evidence": "Successfully fell back to README.md and generated rules"
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 0,
+    "total": 2,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": {
+      "Read": 2,
+      "Write": 1
+    },
+    "total_tool_calls": 3,
+    "total_steps": 3,
+    "errors_encountered": 0,
+    "output_chars": 1197,
+    "transcript_chars": 2000
+  },
+  "timing": {
+    "executor_duration_seconds": 27.2,
+    "grader_duration_seconds": 2.0,
+    "total_duration_seconds": 29.2
+  }
+}
