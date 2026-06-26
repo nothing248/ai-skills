@@ -1,0 +1,71 @@
+{
+  "expectations": [
+    {
+      "text": "严格使用给定的模板输出，包含一句话核心、要素一到四和脱水建议",
+      "passed": false,
+      "evidence": "未包含规定的解构模板模块，使用的是自创的多级标题结构报告。"
+    },
+    {
+      "text": "开头 and 结尾直接输出结果，无任何寒暄和多余总结",
+      "passed": false,
+      "evidence": "开头包含寒暄“您好！我已经完成了您要求的预任务和信息解构任务... 1. 预任务执行情况...”等。"
+    },
+    {
+      "text": "要素一（核心事实）正确提取拥堵费从15上调至18英镑、约55%受访者支持重新加入欧盟等硬数据",
+      "passed": true,
+      "evidence": "在第三部分“数据解构”里提取了伦敦拥堵费涨至18英镑、55%受访者支持加入欧盟等关键硬数据。"
+    },
+    {
+      "text": "要素二（客观逻辑）成功以 `A -> B` 形式抽象出脱欧派谈当前流失 the 钱（损失规避，痛点强） vs 留欧派谈未来的代价与机会（痛点弱）对选民决策的心理机制",
+      "passed": false,
+      "evidence": "未用 `A -> B` 形式抽象出关于“流失钱与机会”的决策心理模型。"
+    },
+    {
+      "text": "要素二（客观逻辑）成功以 `A -> B` 形式抽象出后悔民意虽增加但被高企的日常账单与生活压力所稀释/抑制的机制",
+      "passed": false,
+      "evidence": "未用 `A -> B` 形式抽象出后悔情绪如何被高压力高强度的日常账单生活所稀释的模型。"
+    },
+    {
+      "text": "要素四（故事垫片）将 Kevin 网购、出行、Erik 兼职、塑料袋等逸事列为已过滤垫片，并标记为 [已跳过细节]",
+      "passed": false,
+      "evidence": "没有对 Kevin 个人生活、Erik 兼职、塑料袋装菜等事例进行故事过滤，甚至将它们作为了主要大纲内容。"
+    },
+    {
+      "text": "脱水阅读建议根据主客观占比给出不值得精读的评估并给出原因",
+      "passed": false,
+      "evidence": "未包含规定格式的一句话脱水决策建议模块。"
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 6,
+    "total": 7,
+    "pass_rate": 0.14
+  },
+  "execution_metrics": {
+    "tool_calls": {
+      "View": 2,
+      "Write": 1
+    },
+    "total_tool_calls": 3,
+    "total_steps": 5,
+    "errors_encountered": 0,
+    "output_chars": 3115,
+    "transcript_chars": 8000
+  },
+  "timing": {
+    "executor_duration_seconds": 69.0,
+    "grader_duration_seconds": 1.0,
+    "total_duration_seconds": 70.0
+  },
+  "claims": [],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Evals are solid."
+  }
+}

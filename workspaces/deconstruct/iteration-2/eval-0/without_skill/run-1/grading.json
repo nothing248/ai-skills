@@ -1,0 +1,71 @@
+{
+  "expectations": [
+    {
+      "text": "严格使用给定的模板输出，包含一句话核心、要素一到四和脱水建议",
+      "passed": false,
+      "evidence": "未包含规定的解构模板模块，使用的是自创的观点和论据结构。"
+    },
+    {
+      "text": "开头和结尾直接输出结果，无任何寒暄和多余总结",
+      "passed": false,
+      "evidence": "开头包含寒暄“我已完成文章《为什么你必须坚持早起：成功的唯一秘密》的信息解构任务...”以及Pre-task报告。"
+    },
+    {
+      "text": "要素一（核心事实）正确判断并显示为“无显著硬事实”",
+      "passed": false,
+      "evidence": "未在指定位置明确将事实标为无显著硬事实。"
+    },
+    {
+      "text": "要素二（客观逻辑）正确指出“本文不包含可复用的客观机制模型”",
+      "passed": false,
+      "evidence": "未在指定位置指出本文不包含客观模型。"
+    },
+    {
+      "text": "要素三（主观观点）正确提取了作者对“早起”的主观断言，并指出了其逻辑绑架或主观绑架",
+      "passed": false,
+      "evidence": "虽然有批判性分析，但没有在要素三的指定格式下展现并给出避坑提示。"
+    },
+    {
+      "text": "要素四（故事垫片）将库克、罗伯特·艾格等人的案例作为已过滤垫片，并标记为 [已跳过细节]",
+      "passed": false,
+      "evidence": "没有对名人经历等故事进行过滤和标记为 [已跳过细节]。"
+    },
+    {
+      "text": "脱水阅读建议明确建议“不值得精读”并给出合理解释",
+      "passed": false,
+      "evidence": "未在末尾包含规定格式的一句话脱水建议。"
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 7,
+    "total": 7,
+    "pass_rate": 0.0
+  },
+  "execution_metrics": {
+    "tool_calls": {
+      "View": 2,
+      "Write": 1
+    },
+    "total_tool_calls": 3,
+    "total_steps": 5,
+    "errors_encountered": 0,
+    "output_chars": 2079,
+    "transcript_chars": 8000
+  },
+  "timing": {
+    "executor_duration_seconds": 69.0,
+    "grader_duration_seconds": 1.0,
+    "total_duration_seconds": 70.0
+  },
+  "claims": [],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Evals are solid."
+  }
+}

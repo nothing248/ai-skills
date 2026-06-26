@@ -1,0 +1,71 @@
+{
+  "expectations": [
+    {
+      "text": "严格使用给定的模板输出，包含一句话核心、要素一到四和脱水建议",
+      "passed": false,
+      "evidence": "未包含规定的解构模板模块，使用的是自创的多级标题结构。"
+    },
+    {
+      "text": "开头和结尾直接输出结果，无任何寒暄和多余总结",
+      "passed": false,
+      "evidence": "开头包含寒暄“我已成功完成了任务：1. Pre-task...”等。"
+    },
+    {
+      "text": "要素一（核心事实）正确提取了关键数据，如突触长时程增强（LTP）诱导率下降42%、慢波活动（SWA）或SPW-Rs高频振荡频率等",
+      "passed": true,
+      "evidence": "在第二部分实验数据中提取出了“长时程增强（LTP）诱导率下降了 42%”以及SPW-Rs高频振荡频率为 150-250 Hz。"
+    },
+    {
+      "text": "要素二（客观逻辑）成功以 `A -> B` 的形式抽象出至少一个因果机制（例如：睡眠剥夺 -> 海马CA1区LTP下降 -> 记忆巩固受阻）",
+      "passed": false,
+      "evidence": "虽然梳理了过程，但未严格以紧凑的 `A -> B` 因果机制链条抽象出来。"
+    },
+    {
+      "text": "要素三（主观观点）指出文中没有主观偏见或情感倾向",
+      "passed": false,
+      "evidence": "输出中根本没有关于主观立场评估的模块，没有指出文中无主观偏见。"
+    },
+    {
+      "text": "要素四（故事垫片）过滤了小鼠实验等案例细节，标记为 [已跳过细节]",
+      "passed": false,
+      "evidence": "没有对小鼠实验进行故事过滤与 [已跳过细节] 标记，而是进行了详细文字叙述。"
+    },
+    {
+      "text": "脱水阅读建议评估本文“值得精读”并合理说明原因（如包含高含金量的因果机制）",
+      "passed": false,
+      "evidence": "输出中不包含任何一句话脱水决策建议板块。"
+    }
+  ],
+  "summary": {
+    "passed": 1,
+    "failed": 6,
+    "total": 7,
+    "pass_rate": 0.14
+  },
+  "execution_metrics": {
+    "tool_calls": {
+      "View": 2,
+      "Write": 1
+    },
+    "total_tool_calls": 3,
+    "total_steps": 5,
+    "errors_encountered": 0,
+    "output_chars": 975,
+    "transcript_chars": 8000
+  },
+  "timing": {
+    "executor_duration_seconds": 70.0,
+    "grader_duration_seconds": 1.0,
+    "total_duration_seconds": 71.0
+  },
+  "claims": [],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Evals are solid."
+  }
+}

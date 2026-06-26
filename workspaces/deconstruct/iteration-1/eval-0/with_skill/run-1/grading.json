@@ -1,0 +1,71 @@
+{
+  "expectations": [
+    {
+      "text": "严格使用给定的模板输出，包含一句话核心、要素一到四和脱水建议",
+      "passed": true,
+      "evidence": "输出中严格包含一句话核心、要素一到四、脱水建议等六个板块。"
+    },
+    {
+      "text": "开头和结尾直接输出结果，无任何寒暄和多余总结",
+      "passed": true,
+      "evidence": "输出直接以💡一句话核心开始，没有任何开场白寒暄，结尾也直接结束无任何总结废话。"
+    },
+    {
+      "text": "要素一（核心事实）正确判断并显示为“无显著硬事实”",
+      "passed": true,
+      "evidence": "要素一（核心事实）中明确标注了“- 无显著硬事实。（文中提及的“科学研究表明”缺乏具体研究机构...）”。"
+    },
+    {
+      "text": "要素二（客观逻辑）正确指出“本文不包含可复用的客观机制模型”",
+      "passed": true,
+      "evidence": "要素二（客观逻辑）明确写道“- 本文不包含可复用的客观机制模型，仅属于软性观点陈述。”"
+    },
+    {
+      "text": "要素三（主观观点）正确提取了作者对“早起”的主观断言，并指出了其逻辑绑架或主观绑架",
+      "passed": true,
+      "evidence": "要素三（主观观点）列出了三条主观观点，并在避坑提示中明确指出“作者试图用极少数的名人孤证... 存在严重的幸存者偏差和单一因果归因谬误，且伴随“不早起即懒惰”的情绪绑架”。"
+    },
+    {
+      "text": "要素四（故事垫片）将库克、罗伯特·艾格等人的案例作为已过滤垫片，并标记为 [已跳过细节]",
+      "passed": true,
+      "evidence": "要素四（故事垫片）包含“库克发邮案 [已跳过细节]”、“艾格看报案 [已跳过细节]”及“作者早起写作案 [已跳过细节]”。"
+    },
+    {
+      "text": "脱水阅读建议明确建议“不值得精读”并给出合理解释",
+      "passed": true,
+      "evidence": "脱水建议指出“不值得。本文是典型的成功学“鸡汤文”... 建议直接跳过”。"
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": {
+      "View": 2,
+      "Write": 1
+    },
+    "total_tool_calls": 3,
+    "total_steps": 5,
+    "errors_encountered": 0,
+    "output_chars": 716,
+    "transcript_chars": 8000
+  },
+  "timing": {
+    "executor_duration_seconds": 30.0,
+    "grader_duration_seconds": 1.0,
+    "total_duration_seconds": 31.0
+  },
+  "claims": [],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Evals are solid."
+  }
+}

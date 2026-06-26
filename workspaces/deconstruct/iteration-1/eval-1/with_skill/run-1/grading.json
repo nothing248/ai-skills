@@ -1,0 +1,71 @@
+{
+  "expectations": [
+    {
+      "text": "严格使用给定的模板输出，包含一句话核心、要素一到四和脱水建议",
+      "passed": true,
+      "evidence": "输出中严格包含一句话核心、要素一到四、脱水建议等六个板块。"
+    },
+    {
+      "text": "开头和结尾直接输出结果，无任何寒暄和多余总结",
+      "passed": true,
+      "evidence": "输出直接以💡一句话核心开始，没有开头寒暄或结尾总结废话。"
+    },
+    {
+      "text": "要素一（核心事实）正确提取了关键数据，如突触长时程增强（LTP）诱导率下降42%、慢波活动（SWA）或SPW-Rs高频振荡频率等",
+      "passed": true,
+      "evidence": "要素一（核心事实）提取出了LTP诱导率下降了42%、SPW-Rs高频振荡频率（150-250 Hz）等关键硬数据。"
+    },
+    {
+      "text": "要素二（客观逻辑）成功以 `A -> B` 的形式抽象出至少一个因果机制（例如：睡眠剥夺 -> 海马CA1区LTP下降 -> 记忆巩固受阻）",
+      "passed": true,
+      "evidence": "要素二（客观逻辑）提取出两个客观机制模型，如[睡眠缺乏对记忆巩固的抑制机制]：睡眠剥夺 -> LTP诱导率下降 -> 突触可塑性受损 -> 记忆巩固受阻。"
+    },
+    {
+      "text": "要素三（主观观点）指出文中没有主观偏见或情感倾向",
+      "passed": true,
+      "evidence": "要素三（主观观点）中指出“🚩 主观观点 1：无（全文基于客观神经科学研究结果与机制推导描述）”，并给出了合理的避坑提示。"
+    },
+    {
+      "text": "要素四（故事垫片）过滤了小鼠实验等案例细节，标记为 [已跳过细节]",
+      "passed": true,
+      "evidence": "要素四（故事垫片）成功将“剥夺小鼠睡眠实验”过滤并标记为 [已跳过细节]。"
+    },
+    {
+      "text": "脱水阅读建议评估本文“值得精读”并合理说明原因（如包含高含金量的因果机制）",
+      "passed": true,
+      "evidence": "脱水建议明确指出“值得精读。本文虽然简短，但信息密度极高... 建议精读”。"
+    }
+  ],
+  "summary": {
+    "passed": 7,
+    "failed": 0,
+    "total": 7,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "tool_calls": {
+      "View": 2,
+      "Write": 1
+    },
+    "total_tool_calls": 3,
+    "total_steps": 5,
+    "errors_encountered": 0,
+    "output_chars": 1235,
+    "transcript_chars": 8000
+  },
+  "timing": {
+    "executor_duration_seconds": 37.0,
+    "grader_duration_seconds": 1.0,
+    "total_duration_seconds": 38.0
+  },
+  "claims": [],
+  "user_notes_summary": {
+    "uncertainties": [],
+    "needs_review": [],
+    "workarounds": []
+  },
+  "eval_feedback": {
+    "suggestions": [],
+    "overall": "Evals are solid."
+  }
+}
