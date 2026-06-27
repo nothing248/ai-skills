@@ -1,0 +1,333 @@
+{
+  "metadata": {
+    "skill_name": "deconstruct-interview",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-06-27T03:49:15Z",
+    "evals_run": [
+      0,
+      1,
+      2
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 0,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 23.0,
+        "tokens": 16254,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "\u5305\u542b\u77e5\u8bc6\u80cc\u666f\u6216\u539f\u7406\u6807\u9898",
+          "passed": true,
+          "evidence": "Found '\u539f\u7406' in response"
+        },
+        {
+          "text": "\u5305\u542b10\u5206\u5236\u8bc4\u5206\u91cf\u8868",
+          "passed": true,
+          "evidence": "Found '10\u5206' in response"
+        },
+        {
+          "text": "\u5305\u542b\u63d0\u95ee\u76ee\u7684\u5256\u6790",
+          "passed": true,
+          "evidence": "Found '\u76ee\u7684' in response"
+        },
+        {
+          "text": "\u5305\u542b\u590d\u6742\u5ea6\u8bc4\u7ea7",
+          "passed": true,
+          "evidence": "Found '\u590d\u6742\u5ea6' in response"
+        },
+        {
+          "text": "\u63d0\u5230\u7ea2\u9ed1\u6811\u4f18\u5316",
+          "passed": true,
+          "evidence": "Found '\u7ea2\u9ed1\u6811' in response"
+        },
+        {
+          "text": "\u63d0\u5230\u94fe\u8868\u4e0e\u7ea2\u9ed1\u6811\u7684\u8f6c\u6362\u9608\u503c",
+          "passed": true,
+          "evidence": "Found '8' in response"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 26.0,
+        "tokens": 18451,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "\u5305\u542b\u77e5\u8bc6\u80cc\u666f\u4e0e\u5e95\u5c42\u539f\u7406",
+          "passed": true,
+          "evidence": "Found '\u539f\u7406' in response"
+        },
+        {
+          "text": "\u5305\u542b10\u5206\u5236\u8bc4\u5206\u91cf\u8868",
+          "passed": true,
+          "evidence": "Found '10\u5206' in response"
+        },
+        {
+          "text": "\u5305\u542b\u63d0\u95ee\u76ee\u7684\u5256\u6790",
+          "passed": true,
+          "evidence": "Found '\u76ee\u7684' in response"
+        },
+        {
+          "text": "\u63d0\u5230\u53cc\u5199\u4e00\u81f4\u6027\u6838\u5fc3\u7b56\u7565",
+          "passed": true,
+          "evidence": "Found '\u7f13\u5b58' in response"
+        },
+        {
+          "text": "\u63d0\u5230\u6700\u7ec8\u4e00\u81f4\u6027\u6216CAP\u6298\u4e2d",
+          "passed": true,
+          "evidence": "Found '\u4e00\u81f4\u6027' in response"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 21.0,
+        "tokens": 15412,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "\u5305\u542b\u5e94\u6025\u5904\u7406\u6216\u6545\u969c\u5206\u6790",
+          "passed": true,
+          "evidence": "Found '\u4e8b\u6545' in response"
+        },
+        {
+          "text": "\u5305\u542b10\u5206\u5236\u8bc4\u5206\u91cf\u8868",
+          "passed": true,
+          "evidence": "Found '10\u5206' in response"
+        },
+        {
+          "text": "\u5305\u542b\u63d0\u95ee\u76ee\u7684\u5256\u6790",
+          "passed": true,
+          "evidence": "Found '\u76ee\u7684' in response"
+        },
+        {
+          "text": "\u63d0\u5230\u6b62\u8840\u6216\u6062\u590d\u670d\u52a1\u4f18\u5148",
+          "passed": true,
+          "evidence": "Found '\u6b62\u8840' in response"
+        },
+        {
+          "text": "\u63d0\u5230\u56de\u6eda\u673a\u5236",
+          "passed": true,
+          "evidence": "Found '\u56de\u6eda' in response"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 0,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.6667,
+        "passed": 4,
+        "failed": 2,
+        "total": 6,
+        "time_seconds": 11.0,
+        "tokens": 8231,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "\u5305\u542b\u77e5\u8bc6\u80cc\u666f\u6216\u539f\u7406\u6807\u9898",
+          "passed": true,
+          "evidence": "Found '\u539f\u7406' in response"
+        },
+        {
+          "text": "\u5305\u542b10\u5206\u5236\u8bc4\u5206\u91cf\u8868",
+          "passed": false,
+          "evidence": "Could not find '10\u5206' in response"
+        },
+        {
+          "text": "\u5305\u542b\u63d0\u95ee\u76ee\u7684\u5256\u6790",
+          "passed": false,
+          "evidence": "Could not find '\u76ee\u7684' in response"
+        },
+        {
+          "text": "\u5305\u542b\u590d\u6742\u5ea6\u8bc4\u7ea7",
+          "passed": true,
+          "evidence": "Found '\u590d\u6742\u5ea6' in response"
+        },
+        {
+          "text": "\u63d0\u5230\u7ea2\u9ed1\u6811\u4f18\u5316",
+          "passed": true,
+          "evidence": "Found '\u7ea2\u9ed1\u6811' in response"
+        },
+        {
+          "text": "\u63d0\u5230\u94fe\u8868\u4e0e\u7ea2\u9ed1\u6811\u7684\u8f6c\u6362\u9608\u503c",
+          "passed": true,
+          "evidence": "Found '8' in response"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.4,
+        "passed": 2,
+        "failed": 3,
+        "total": 5,
+        "time_seconds": 16.0,
+        "tokens": 10521,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "\u5305\u542b\u77e5\u8bc6\u80cc\u666f\u4e0e\u5e95\u5c42\u539f\u7406",
+          "passed": false,
+          "evidence": "Could not find '\u539f\u7406' in response"
+        },
+        {
+          "text": "\u5305\u542b10\u5206\u5236\u8bc4\u5206\u91cf\u8868",
+          "passed": false,
+          "evidence": "Could not find '10\u5206' in response"
+        },
+        {
+          "text": "\u5305\u542b\u63d0\u95ee\u76ee\u7684\u5256\u6790",
+          "passed": false,
+          "evidence": "Could not find '\u76ee\u7684' in response"
+        },
+        {
+          "text": "\u63d0\u5230\u53cc\u5199\u4e00\u81f4\u6027\u6838\u5fc3\u7b56\u7565",
+          "passed": true,
+          "evidence": "Found '\u7f13\u5b58' in response"
+        },
+        {
+          "text": "\u63d0\u5230\u6700\u7ec8\u4e00\u81f4\u6027\u6216CAP\u6298\u4e2d",
+          "passed": true,
+          "evidence": "Found '\u4e00\u81f4\u6027' in response"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "total": 5,
+        "time_seconds": 12.0,
+        "tokens": 7891,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "\u5305\u542b\u5e94\u6025\u5904\u7406\u6216\u6545\u969c\u5206\u6790",
+          "passed": true,
+          "evidence": "Found '\u4e8b\u6545' in response"
+        },
+        {
+          "text": "\u5305\u542b10\u5206\u5236\u8bc4\u5206\u91cf\u8868",
+          "passed": false,
+          "evidence": "Could not find '10\u5206' in response"
+        },
+        {
+          "text": "\u5305\u542b\u63d0\u95ee\u76ee\u7684\u5256\u6790",
+          "passed": true,
+          "evidence": "Found '\u76ee\u7684' in response"
+        },
+        {
+          "text": "\u63d0\u5230\u6b62\u8840\u6216\u6062\u590d\u670d\u52a1\u4f18\u5148",
+          "passed": true,
+          "evidence": "Found '\u6b62\u8840' in response"
+        },
+        {
+          "text": "\u63d0\u5230\u56de\u6eda\u673a\u5236",
+          "passed": true,
+          "evidence": "Found '\u56de\u6eda' in response"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 23.3333,
+        "stddev": 2.5166,
+        "min": 21.0,
+        "max": 26.0
+      },
+      "tokens": {
+        "mean": 16705.6667,
+        "stddev": 1569.0387,
+        "min": 15412,
+        "max": 18451
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.6222,
+        "stddev": 0.2037,
+        "min": 0.4,
+        "max": 0.8
+      },
+      "time_seconds": {
+        "mean": 13.0,
+        "stddev": 2.6458,
+        "min": 11.0,
+        "max": 16.0
+      },
+      "tokens": {
+        "mean": 8881.0,
+        "stddev": 1430.4195,
+        "min": 7891,
+        "max": 10521
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.38",
+      "time_seconds": "+10.3",
+      "tokens": "+7825"
+    }
+  },
+  "notes": []
+}

@@ -1,0 +1,40 @@
+{
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 6,
+    "failed": 0,
+    "total": 6
+  },
+  "expectations": [
+    {
+      "text": "包含知识背景或原理标题",
+      "passed": true,
+      "evidence": "Found '原理' in response"
+    },
+    {
+      "text": "包含10分制评分量表",
+      "passed": true,
+      "evidence": "Found '10分' in response"
+    },
+    {
+      "text": "包含提问目的剖析",
+      "passed": true,
+      "evidence": "Found '目的' in response"
+    },
+    {
+      "text": "包含复杂度评级",
+      "passed": true,
+      "evidence": "Found '复杂度' in response"
+    },
+    {
+      "text": "提到红黑树优化",
+      "passed": true,
+      "evidence": "Found '红黑树' in response"
+    },
+    {
+      "text": "提到链表与红黑树的转换阈值",
+      "passed": true,
+      "evidence": "Found '8' in response"
+    }
+  ]
+}

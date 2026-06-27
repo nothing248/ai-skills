@@ -1,0 +1,32 @@
+{
+  "eval_id": 2,
+  "eval_name": "online-incident",
+  "prompt": "如果你的项目因为你提交的一行代码导致了线上事故，服务不可用，这个时候你应该怎么做？面试官问这个问题的意图是什么？",
+  "assertions": [
+    {
+      "name": "包含应急处理或故障分析",
+      "type": "contains",
+      "value": "事故"
+    },
+    {
+      "name": "包含10分制评分量表",
+      "type": "contains",
+      "value": "10分"
+    },
+    {
+      "name": "包含提问目的剖析",
+      "type": "contains",
+      "value": "目的"
+    },
+    {
+      "name": "提到止血或恢复服务优先",
+      "type": "contains",
+      "value": "止血"
+    },
+    {
+      "name": "提到回滚机制",
+      "type": "contains",
+      "value": "回滚"
+    }
+  ]
+}

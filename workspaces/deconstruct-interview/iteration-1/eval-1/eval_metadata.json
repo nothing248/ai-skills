@@ -1,0 +1,32 @@
+{
+  "eval_id": 1,
+  "eval_name": "redis-double-write",
+  "prompt": "为了解决高并发读的问题，我们引入了 Redis 作为缓存。但随之而来的是缓存与数据库的双写一致性问题。请问有哪些常见的一致性保障策略？它们各自的优缺点 and 适用场景是什么？",
+  "assertions": [
+    {
+      "name": "包含知识背景与底层原理",
+      "type": "contains",
+      "value": "原理"
+    },
+    {
+      "name": "包含10分制评分量表",
+      "type": "contains",
+      "value": "10分"
+    },
+    {
+      "name": "包含提问目的剖析",
+      "type": "contains",
+      "value": "目的"
+    },
+    {
+      "name": "提到双写一致性核心策略",
+      "type": "contains",
+      "value": "缓存"
+    },
+    {
+      "name": "提到最终一致性或CAP折中",
+      "type": "contains",
+      "value": "一致性"
+    }
+  ]
+}

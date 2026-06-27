@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "pass_rate": 0.8,
+    "passed": 4,
+    "failed": 1,
+    "total": 5
+  },
+  "expectations": [
+    {
+      "text": "包含应急处理或故障分析",
+      "passed": true,
+      "evidence": "Found '事故' in response"
+    },
+    {
+      "text": "包含10分制评分量表",
+      "passed": false,
+      "evidence": "Could not find '10分' in response"
+    },
+    {
+      "text": "包含提问目的剖析",
+      "passed": true,
+      "evidence": "Found '目的' in response"
+    },
+    {
+      "text": "提到止血或恢复服务优先",
+      "passed": true,
+      "evidence": "Found '止血' in response"
+    },
+    {
+      "text": "提到回滚机制",
+      "passed": true,
+      "evidence": "Found '回滚' in response"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "eval_id": 0,
+  "eval_name": "hashmap-conflict",
+  "prompt": "在 Java 中，HashMap 是如何解决哈希冲突的？JDK 1.8 之后做了什么优化？为什么？",
+  "assertions": [
+    {
+      "name": "包含知识背景或原理标题",
+      "type": "contains",
+      "value": "原理"
+    },
+    {
+      "name": "包含10分制评分量表",
+      "type": "contains",
+      "value": "10分"
+    },
+    {
+      "name": "包含提问目的剖析",
+      "type": "contains",
+      "value": "目的"
+    },
+    {
+      "name": "包含复杂度评级",
+      "type": "contains",
+      "value": "复杂度"
+    },
+    {
+      "name": "提到红黑树优化",
+      "type": "contains",
+      "value": "红黑树"
+    },
+    {
+      "name": "提到链表与红黑树的转换阈值",
+      "type": "contains",
+      "value": "8"
+    }
+  ]
+}

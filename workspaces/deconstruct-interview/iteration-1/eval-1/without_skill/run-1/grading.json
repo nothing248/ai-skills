@@ -1,0 +1,35 @@
+{
+  "summary": {
+    "pass_rate": 0.4,
+    "passed": 2,
+    "failed": 3,
+    "total": 5
+  },
+  "expectations": [
+    {
+      "text": "包含知识背景与底层原理",
+      "passed": false,
+      "evidence": "Could not find '原理' in response"
+    },
+    {
+      "text": "包含10分制评分量表",
+      "passed": false,
+      "evidence": "Could not find '10分' in response"
+    },
+    {
+      "text": "包含提问目的剖析",
+      "passed": false,
+      "evidence": "Could not find '目的' in response"
+    },
+    {
+      "text": "提到双写一致性核心策略",
+      "passed": true,
+      "evidence": "Found '缓存' in response"
+    },
+    {
+      "text": "提到最终一致性或CAP折中",
+      "passed": true,
+      "evidence": "Found '一致性' in response"
+    }
+  ]
+}

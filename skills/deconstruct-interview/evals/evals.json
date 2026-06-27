@@ -1,0 +1,109 @@
+{
+  "skill_name": "deconstruct-interview",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "在 Java 中，HashMap 是如何解决哈希冲突的？JDK 1.8 之后做了什么优化？为什么？",
+      "expected_output": "详细分析 HashMap 解决冲突的链地址法及 JDK 1.8 引入红黑树的背景（性能退化到 O(N) 的痛点），给出红黑树转换的阈值和考量，制定科学的10分制评分表，剖析提问意图并评级为中等难度（3星）。",
+      "files": [],
+      "assertions": [
+        {
+          "name": "包含知识背景或原理标题",
+          "type": "contains",
+          "value": "原理"
+        },
+        {
+          "name": "包含10分制评分量表",
+          "type": "contains",
+          "value": "10分"
+        },
+        {
+          "name": "包含提问目的剖析",
+          "type": "contains",
+          "value": "目的"
+        },
+        {
+          "name": "包含复杂度评级",
+          "type": "contains",
+          "value": "复杂度"
+        },
+        {
+          "name": "提到红黑树优化",
+          "type": "contains",
+          "value": "红黑树"
+        },
+        {
+          "name": "提到链表与红黑树的转换阈值",
+          "type": "contains",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "为了解决高并发读的问题，我们引入了 Redis 作为缓存。但随之而来的是缓存与数据库的双写一致性问题。请问有哪些常见的一致性保障策略？它们各自的优缺点和适用场景是什么？",
+      "expected_output": "全面剖析双写一致性策略（先更后删、延时双删、Binlog异步消费等），分析 CAP 理论的折中选择（强一致性与最终一致性的抉择），制定科学的10分制评分表，剖析提问意图并评级为中高难度（4星）。",
+      "files": [],
+      "assertions": [
+        {
+          "name": "包含知识背景与底层原理",
+          "type": "contains",
+          "value": "原理"
+        },
+        {
+          "name": "包含10分制评分量表",
+          "type": "contains",
+          "value": "10分"
+        },
+        {
+          "name": "包含提问目的剖析",
+          "type": "contains",
+          "value": "目的"
+        },
+        {
+          "name": "提到双写一致性核心策略",
+          "type": "contains",
+          "value": "缓存"
+        },
+        {
+          "name": "提到最终一致性或CAP折中",
+          "type": "contains",
+          "value": "一致性"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "如果你的项目因为你提交的一行代码导致了线上事故，服务不可用，这个时候你应该怎么做？面试官问这个问题的意图是什么？",
+      "expected_output": "分析如何应对线上故障的应急流程（止血优先、定位问题、修复、复盘），剖析提问意图（抗压能力、责任心、流程合规），制定包含沟通与技术止血维度的科学10分制评分表，并评级为行为面试中等偏低难度（2.5星）。",
+      "files": [],
+      "assertions": [
+        {
+          "name": "包含应急处理或故障分析",
+          "type": "contains",
+          "value": "事故"
+        },
+        {
+          "name": "包含10分制评分量表",
+          "type": "contains",
+          "value": "10分"
+        },
+        {
+          "name": "包含提问目的剖析",
+          "type": "contains",
+          "value": "目的"
+        },
+        {
+          "name": "提到止血或恢复服务优先",
+          "type": "contains",
+          "value": "止血"
+        },
+        {
+          "name": "提到回滚机制",
+          "type": "contains",
+          "value": "回滚"
+        }
+      ]
+    }
+  ]
+}

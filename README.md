@@ -16,31 +16,17 @@
 
 ```text
 ai-skills/
-├── README.md                                     # 仓库主文档（本文件）
-├── skills/                                       # 技能存放目录
-│   ├── agents-init/                              # 技能 1: 项目级 Agent 规则初始化工具
-│   │   ├── README.md                             # 技能说明文档
-│   │   ├── SKILL.md                              # 技能行为规范文件
-│   │   └── evals/                                # 自动化评测用例
-│   │       └── evals.json
-│   ├── notes-create-template/                    # 技能 2: 笔记大纲生成器
-│   │   ├── README.md                             # 技能说明文档
-│   │   ├── SKILL.md                              # 技能行为规范文件
-│   │   └── resources/                            # 具体的笔记大纲模板
-│   │       ├── theory-template.md                # 理论概念大纲模板
-│   │       ├── tool-template.md                  # 工具框架大纲模板
-│   │       └── project-template.md               # 实战项目大纲模板
-│   ├── notes-optimize/                           # 技能 3: 笔记优化与脱敏工具
-│   │   ├── README.md                             # 技能说明文档
-│   │   └── SKILL.md                              # 技能行为规范文件
-│   └── deconstruct/                              # 技能 4: 信息解构与脱水阅读器
-│       ├── README.md                             # 技能说明文档
-│       ├── SKILL.md                              # 技能行为规范文件
-│       └── evals/                                # 自动化评测用例
-│           └── evals.json
-└── workspaces/                                   # 技能开发与测试工作区
-    ├── agents-init/                              # agents-init 技能评测工作目录与历史归档
-    └── deconstruct/                              # deconstruct 技能评测工作目录与历史归档
+├── README.md                      # 仓库主文档（本文件）
+├── skills/                        # 技能存放目录（各技能含各自的 README.md, SKILL.md, evals.json）
+│   ├── agents-init/               # 技能 1: 项目级 Agent 规则初始化工具
+│   ├── notes-create-template/     # 技能 2: 学习笔记与大纲架构师
+│   ├── notes-optimize/            # 技能 3: Obsidian & RAG 笔记优化专家
+│   ├── deconstruct/               # 技能 4: 信息解构与脱水阅读器
+│   └── deconstruct-interview/     # 技能 5: 面试问题解构器
+└── workspaces/                    # 技能开发与测试工作区（包含运行产物及评测数据）
+    ├── agents-init/               # agents-init 评测与开发工作目录
+    ├── deconstruct/               # deconstruct 评测与开发工作目录
+    └── deconstruct-interview/     # deconstruct-interview 评测与开发工作目录
 ```
 
 ---
@@ -66,6 +52,11 @@ ai-skills/
 *   **核心功能**：剥离文章、链接或长文本中的噪音、故事和主观说教包装，以极高的信噪比拆解为一句话核心、核心事实、客观因果算法、主观价值倾向和已跳过细节的故事，并提供一句话脱水精读建议。
 *   **内置方法**：严格的结构化四要素分类（💡核心、📊事实、⚙️因果、⚠️主观、📦故事、🎯建议），对名人案例自动进行 `[已跳过细节]` 过滤，提供对情绪渲染性文章的避坑提示。
 *   **适用场景**：想要快速过滤长篇大论的废话、提取学术论文机制或识别商业分析软性偏见并做脱水阅读时。
+
+### 5. [deconstruct-interview](skills/deconstruct-interview/README.md) (面试问题解构器)
+*   **核心功能**：输入任何维度的面试题，从技术背景与底层原理、10分制量化回答评估体系、面试官深层目的及问题复杂度 4 个模块对其进行系统化、深度的拆解。
+*   **内置方法**：建立包含明确得分点与扣分项的 10 分制评分表格，剖析初中级与专家级候选人回答的区分度，自动引入 Mermaid 展示其底层工作机制。
+*   **适用场景**：面试官建立标准化面试题评估模型时，或求职候选人需要对高频及复杂技术/行为面试题进行无死角演练复习时。
 
 ---
 
